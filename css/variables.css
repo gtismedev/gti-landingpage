@@ -6,6 +6,9 @@
   --gray: #f9f9f9;
   --white: #fff;
 
+  --hero-background: linear-gradient(270deg, #1C3152 63.5%, #3F6EB8 100%);
+  --footer-background: linear-gradient(0deg, #1C3152 0%, #3F6EB8 100%);
+
   --title-h1-size: 4rem;
   --title-h2-size: font-size: 2.25rem;
   --title-h3-size: font-size: 1.5rem;
