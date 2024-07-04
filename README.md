@@ -14,3 +14,7 @@ Requisitos para os desenvolvedores:
 - Extensão -> [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - CSS name pattern -> [BEM](https://desenvolvimentoparaweb.com/css/bem/)
 - Commit pattern -> [Commit semântico](https://blog.geekhunter.com.br/o-que-e-commit-e-como-usar-commits-semanticos/)
+
+Links extras
+
+- [Figma](https://www.figma.com/design/28xjk9GgRNB1PAivPRzD56/Landing-Page-GTI?m=dev&node-id=4-2)
