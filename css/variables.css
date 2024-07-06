@@ -19,3 +19,7 @@
   --paragraph-size: 1.125rem;
   --button-size: 1.125rem;
 }
+
+body {
+  font-family: Poppins;
+}
