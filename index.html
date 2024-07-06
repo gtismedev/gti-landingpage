@@ -21,6 +21,10 @@
   <link rel="stylesheet" href="./css/variables.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css">
+
+  <!--JS-->
+  <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -28,17 +32,19 @@
     <section>
       <nav class="navbar">
         <div class="navbar__logo"></div>
-        <div class="navbar__item">SOBRE NÓS</div>
-        <div class="navbar__item">O QUE FAZEMOS?</div>
-        <div class="navbar__item"> EQUIPE</div>
-        <div class="navbar__item">CONTATO</div>
         <button class="navbar__button-menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="31" height="18" viewBox="0 0 31 18" fill="none">
-            <rect width="31" height="4" fill="#1C3152" />
-            <rect y="7" width="31" height="4" fill="#1C3152" />
-            <rect y="14" width="31" height="4" fill="#1C3152" />
+            <rect class="navbar__button-menu-midbar" width="31" height="4" fill="#1C3152" />
+            <rect class="navbar__button-menu-topbar" y="7" width="31" height="4" fill="#1C3152" />
+            <rect class="navbar__button-menu-bottombar" y="14" width="31" height="4" fill="#1C3152" />
           </svg>
         </button>
+        <ul class="navbar__menu">
+          <div class="navbar__menu-item">SOBRE NÓS</div>
+          <div class="navbar__menu-item">O QUE FAZEMOS?</div>
+          <div class="navbar__menu-item"> EQUIPE</div>
+          <div class="navbar__menu-item">CONTATO</div>
+        </ul>
       </nav>
     </section>
     <section>
