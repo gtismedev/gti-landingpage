@@ -27,7 +27,7 @@
 }
 
 .navbar__menu {
-  display: block;
+  display: none;
   position: absolute;
   left: 30px;
   top: 70px;
