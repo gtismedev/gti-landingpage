@@ -11,13 +11,15 @@ menuButton.addEventListener("click", function () {
     setTimeout(() => {
       menu.style.display = "none";
     }, 750);
+    menu.style.animation = "menu-background-hide 0.8s linear"
+    menu.style.width = "0%"
     //Mostra os itens do menu
     menuItem.forEach((item) => {
       item.style.animation =
-        "menu-item-tracking-out 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        "menu-item-tracking-out 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
     });
     //Altera a imagem no botao para esconder o "X"
-    buttonMenuSvgOpen.style.animation = "button-menu-open-hide 0.4s linear"
+    buttonMenuSvgOpen.style.animation = "button-menu-open-hide 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
     setTimeout(() => {
       buttonMenuSvgOpen.style.display = "none"
     },350)
@@ -31,10 +33,13 @@ menuButton.addEventListener("click", function () {
     }, 400)
   } else {
     menu.style.display = "block";
+    menu.style.animation = "menu-background-reveal 0.6s linear"
+    menu.style.backgroundColor = "#fff";
+    menu.style.width = "50%"
     //Recolhe os itens do menu
     menuItem.forEach((item) => {
       item.style.animation =
-        "menu-item-tracking-in 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 100ms both";
+        "menu-item-tracking-in 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both";
     });
     //Altera a imagem no botao para esconder as barras
     buttonMenuSvgRectClosing.forEach((item) => {
@@ -46,7 +51,7 @@ menuButton.addEventListener("click", function () {
     });
     //Altera a imagem no botao para revelar o "X"
     setTimeout(() => {
-      buttonMenuSvgOpen.style.animation = "button-menu-open-reveal 0.4s linear"
+      buttonMenuSvgOpen.style.animation = "button-menu-open-reveal 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
       buttonMenuSvgOpen.style.display = "block"
     },400)
   }
