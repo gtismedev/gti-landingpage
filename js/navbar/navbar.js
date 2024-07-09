@@ -7,11 +7,9 @@ const buttonMenuSvgClosing = document.querySelector(
 const buttonMenuSvgRectClosing = document.querySelectorAll(
   ".button-menu__svg-rect--closing"
 );
-const buttonMenuSvgOpen = document.querySelector(
-  "#button-menu__svg--open"
-);
+const buttonMenuSvgOpen = document.querySelector("#button-menu__svg--open");
 
-  //Função responsavel por abrir e fechar o menu-burguer
+//Função responsavel por abrir e fechar o menu-burguer
 menuButton.addEventListener("click", function () {
   if (menu.style.display === "block") {
     setTimeout(() => {
@@ -62,4 +60,3 @@ menuButton.addEventListener("click", function () {
     }, 400);
   }
 });
-
