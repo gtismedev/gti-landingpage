@@ -1,14 +1,14 @@
 var menuButton = document.querySelector(".navbar__button-menu");
-var menu = document.querySelector(".navbar__menu-mobile");
+var menu = document.querySelector(".navbar__menu--mobile");
 const menuItem = document.querySelectorAll(".navbar__menu-item");
 const buttonMenuSvgClosing = document.querySelector(
-  "#navbar__button-menu-svg--closing"
+  "#button-menu__svg--closing"
 );
 const buttonMenuSvgRectClosing = document.querySelectorAll(
-  ".navbar__button-menu-svg-rect--closing"
+  ".button-menu__svg-rect--closing"
 );
 const buttonMenuSvgOpen = document.querySelector(
-  "#navbar__button-menu-svg--open"
+  "#button-menu__svg--open"
 );
 
   //Função responsavel por abrir e fechar o menu-burguer

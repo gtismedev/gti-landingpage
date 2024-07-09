@@ -17,6 +17,8 @@
   <!--RESET-->
   <link rel="stylesheet" href="./css/reset.css" />
 
+
+
   <!--CSS-->
   <link rel="stylesheet" href="./css/variables.css" />
   <link rel="stylesheet" href="./css/navbar.css">
@@ -24,7 +26,7 @@
 
   <!--JS-->
   <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js" defer></script>
-  <script src="./js/script.js" defer></script>
+  <script src="./js/navbar/navbar.js" defer></script>
 </head>
 
 <body>
@@ -33,32 +35,31 @@
       <nav class="navbar">
         <div class="navbar__logo"></div>
         <button class="navbar__button-menu">
-          <!--Alterar blocos-->
-          <svg id="navbar__button-menu-svg--closing" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
+          <svg id="button-menu__svg--closing" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
             viewBox="0 0 31 18" fill="none">
-            <rect class="navbar__button-menu-svg-rect--closing" width="31" height="4" fill="#1C3152" />
-            <rect class="navbar__button-menu-svg-rect--closing" y="7" width="31" height="4" fill="#1C3152" />
-            <rect class="navbar__button-menu-svg-rect--closing" y="14" width="31" height="4" fill="#1C3152" />
+            <rect class="button-menu__svg-rect--closing" width="31" height="4" fill="#1C3152" />
+            <rect class="button-menu__svg-rect--closing" y="7" width="31" height="4" fill="#1C3152" />
+            <rect class="button-menu__svg-rect--closing" y="14" width="31" height="4" fill="#1C3152" />
           </svg>
-          <svg id="navbar__button-menu-svg--open" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
+          <svg id="button-menu__svg--open" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
             viewBox="0 0 31 18" fill="none">
             <line x1="7" y1="0" x2="27" y2="18" stroke="#1C3152" stroke-width="3" />
             <line x1="27" y1="0" x2="7" y2="18" stroke="#1C3152" stroke-width="3" />
           </svg>
         </button>
-        <ul class="navbar__menu-desktop"><!--Alterar classe-->
+        <ul class="navbar__menu--desktop">
           <!--Deixar links-->
-          <div class="navbar__menu-item--hover">SOBRE NÓS</div>
-          <div class="navbar__menu-item--hover">O QUE FAZEMOS?</div>
-          <div class="navbar__menu-item--hover"> EQUIPE</div>
-          <div class="navbar__menu-item--hover">CONTATO</div>
+          <div class="navbar__menu-item--hover"><a href="">SOBRE NÓS</a></div>
+          <div class="navbar__menu-item--hover"><a href="">O QUE FAZEMOS?</a></div>
+          <div class="navbar__menu-item--hover"><a href="">EQUIPE</a></div>
+          <div class="navbar__menu-item--hover"><a href="">CONTATO</a></div>
         </ul>
-        <ul class="navbar__menu-mobile"><!--Alterar classe-->
+        <ul class="navbar__menu--mobile">
           <!--Deixar links-->
-          <div class="navbar__menu-item">SOBRE NÓS</div>
-          <div class="navbar__menu-item">O QUE FAZEMOS?</div>
-          <div class="navbar__menu-item"> EQUIPE</div>
-          <div class="navbar__menu-item">CONTATO</div>
+          <div class="navbar__menu-item"><a href="">SOBRE NÓS</a></div>
+          <div class="navbar__menu-item"><a href="">O QUE FAZEMOS?</a></div>
+          <div class="navbar__menu-item"> <a href="">EQUIPE</a></div>
+          <div class="navbar__menu-item"><a href="">CONTATO</a></div>
         </ul>
       </nav>
     </section>

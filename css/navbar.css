@@ -19,14 +19,14 @@
   display: none;
 }
 
-.navbar__menu-desktop {
+.navbar__menu--desktop {
   display: flex;
   width: 516px;
   height: 19px;
   margin: 37px 61px 37px 0;
 }
 
-.navbar__menu-mobile {
+.navbar__menu--mobile {
   display: none;
 }
 
@@ -71,7 +71,7 @@
     overflow: hidden;
   }
 
-  .navbar__menu-mobile {
+  .navbar__menu--mobile {
     display: none;
     position: absolute;
     margin: 0;
@@ -81,7 +81,7 @@
     width: 0%;
   }
 
-  .navbar__menu-desktop {
+  .navbar__menu--desktop {
     display: none;
   }
 
@@ -101,7 +101,7 @@
     display: block;
   }
 
-  #navbar__button-menu-svg--open {
+  #button-menu__svg-rect--closing{
     display: none;
   }
 
