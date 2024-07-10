@@ -1,6 +1,6 @@
 var menuButton = document.querySelector(".navbar__button-menu");
-var menu = document.querySelector(".navbar__menu--mobile");
-const menuItem = document.querySelectorAll(".navbar__menu-item");
+var menu = document.querySelector(".navbar__menu-mobile");
+const menuItem = document.querySelectorAll(".menu-mobile__item");
 const buttonMenuSvgClosing = document.querySelector(
   "#button-menu__svg--closing"
 );
