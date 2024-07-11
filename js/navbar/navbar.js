@@ -16,13 +16,15 @@ const buttonMenuSvgOpen = document.querySelector("#button-menu__svg--open");
 
 //Função responsavel por abrir e fechar o menu-burguer
 menuButton.addEventListener("click", function () {
+  //Altera o menu para desktop
   if (menuMobile.style.display === "block") {
+    //Define um "timer" de 750ms para que as animações rodem antes do display alterar para nones
     setTimeout(() => {
       menuMobile.style.display = "none";
     }, 750);
     menuMobile.style.animation = "menu-background-hide 0.8s linear";
     menuMobile.style.width = "0%";
-    //Mostra os itens do menu
+    //Esconde os itens do menu mobile
     menuItem.forEach((item) => {
       item.style.animation =
         "menu-item-tracking-out 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
@@ -45,7 +47,7 @@ menuButton.addEventListener("click", function () {
     menuMobile.style.animation = "menu-background-reveal 0.6s linear";
     menuMobile.style.backgroundColor = "#fff";
     menuMobile.style.width = "190px";
-    //Recolhe os itens do menu
+    //Mostra os itens do menu mobile
     menuItem.forEach((item) => {
       item.style.animation =
         "menu-item-tracking-in 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both";
