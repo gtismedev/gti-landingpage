@@ -2,6 +2,10 @@
   display: none;
 }
 
+.menu-mobile__item {
+  display: none;
+}
+
 @media only screen and (max-width: 904px) {
   .navbar__menu-mobile {
     display: none;
@@ -14,6 +18,7 @@
   }
 
   .menu-mobile__item {
+    display: block;
     width: 156px;
     height: 30px;
     margin-top: 15px;

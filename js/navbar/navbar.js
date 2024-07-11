@@ -1,5 +1,10 @@
 var menuButton = document.querySelector(".navbar__button-menu");
-var menu = document.querySelector(".navbar__menu-mobile");
+var menuMobile = document.querySelector(".navbar__menu-mobile");
+var menuMobileRect = document.querySelectorAll(
+  ".button-menu__svg-rect--closing"
+);
+var menuDesktop = document.querySelector(".navbar__menu-desktop");
+var navWidth = document.querySelector("#navbar-width");
 const menuItem = document.querySelectorAll(".menu-mobile__item");
 const buttonMenuSvgClosing = document.querySelector(
   "#button-menu__svg--closing"
@@ -11,12 +16,12 @@ const buttonMenuSvgOpen = document.querySelector("#button-menu__svg--open");
 
 //Função responsavel por abrir e fechar o menu-burguer
 menuButton.addEventListener("click", function () {
-  if (menu.style.display === "block") {
+  if (menuMobile.style.display === "block") {
     setTimeout(() => {
-      menu.style.display = "none";
+      menuMobile.style.display = "none";
     }, 750);
-    menu.style.animation = "menu-background-hide 0.8s linear";
-    menu.style.width = "0%";
+    menuMobile.style.animation = "menu-background-hide 0.8s linear";
+    menuMobile.style.width = "0%";
     //Mostra os itens do menu
     menuItem.forEach((item) => {
       item.style.animation =
@@ -36,10 +41,10 @@ menuButton.addEventListener("click", function () {
       });
     }, 400);
   } else {
-    menu.style.display = "block";
-    menu.style.animation = "menu-background-reveal 0.6s linear";
-    menu.style.backgroundColor = "#fff";
-    menu.style.width = "190px";
+    menuMobile.style.display = "block";
+    menuMobile.style.animation = "menu-background-reveal 0.6s linear";
+    menuMobile.style.backgroundColor = "#fff";
+    menuMobile.style.width = "190px";
     //Recolhe os itens do menu
     menuItem.forEach((item) => {
       item.style.animation =
@@ -60,3 +65,19 @@ menuButton.addEventListener("click", function () {
     }, 400);
   }
 });
+
+//Corrige o bug que quebrava a navbar ao abrir o menu-burguer em mobile e rotacionar a tela para desktop
+function fixMenuMobileDisplay() {
+  navWidth = window.innerWidth;
+  console.log(typeof navWidth + "\n" + navWidth);
+  if (navWidth > 904) {
+    menuMobile.style.display = "none";
+    buttonMenuSvgClosing.style.display = "block";
+    buttonMenuSvgOpen.style.display = "none";
+    menuMobileRect.forEach((item) => {
+      item.style.animation = "none";
+    });
+  }
+}
+
+window.addEventListener("resize", fixMenuMobileDisplay);
