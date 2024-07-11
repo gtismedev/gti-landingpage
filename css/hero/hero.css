@@ -10,7 +10,6 @@
 .menu__hero-img,
 .menu__hero-left {
   width: 100%; /* Ajuste a largura conforme necessário */
-  padding: 5vw 0;
   height: 100%;
 }
 
@@ -18,9 +17,12 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
+  gap: 5px;
+  padding-left: 16px;
 }
 
-.menu__hero-text {
+.menu__hero-text > h1 {
   color: var(--white, #fff);
   font-family: Poppins;
   font-size: 16px;
@@ -29,18 +31,18 @@
   line-height: 20px;
   text-transform: uppercase;
   display: flex;
-  padding: 16px;
-  text-align: start;
+  text-align: left;
   align-items: start;
-  margin: 16px;
+  border: 1px solid green;
 }
 
-.menu__hero-img {
-         
+.menu__hero-img > img {
+  border: none;  
 }
 
 .menu__hero-icon{
-  height: 5px;
+  height: auto;
   display: flex;
-  align-self:center;
+  align-self:self-start;
+  border: 1px solid salmon;
 }
