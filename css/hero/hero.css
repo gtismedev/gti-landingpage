@@ -6,25 +6,23 @@
   background: linear-gradient(270deg, #1c3152 63.5%, #3f6eb8 100%);
 }
 
-.menu__hero-text,
 .menu__hero-img,
 .menu__hero-left {
   width: 100%; /* Ajuste a largura conforme necessário */
   height: 100%;
 }
 
-.menu__hero-left{
-  width: 100%;
+.menu__hero-left {
   display: flex;
   flex-direction: column-reverse;
-  border: 1px solid red;
   gap: 5px;
-  padding-left: 16px;
-  min-height: 180px;
+  padding-left: 82px;
+  min-height: 562px;
   justify-content: center;
 }
 
 .menu__hero-text > h1 {
+  width: 530px;
   color: var(--white, #fff);
   font-family: Poppins;
   font-size: 64px;
@@ -35,18 +33,17 @@
   display: flex;
   text-align: left;
   align-items: start;
-  border: 1px solid green;
 }
 
 .menu__hero-img > img {
-  border: none;  
+  border: none;
 }
 
-.menu__hero-icon{
-  height: auto;
+.menu__hero-icon {
   display: flex;
-  align-self:self-start;
-  border: 1px solid salmon;
+  height: 50px;
+  width: auto;
+  align-self: self-start;
 }
 
 @media only screen and (max-width: 904px) {
@@ -57,26 +54,26 @@
     text-align: center;
     background: linear-gradient(270deg, #1c3152 63.5%, #3f6eb8 100%);
   }
-  
+
   .menu__hero-text,
   .menu__hero-img,
   .menu__hero-left {
     width: 100%; /* Ajuste a largura conforme necessário */
     height: 100%;
   }
-  
-  .menu__hero-left{
+
+  .menu__hero-left {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     gap: 5px;
-    padding-left: 16px;
+    padding-left: 40px;
     min-height: 180px;
     justify-content: center;
   }
-  
+
   .menu__hero-text > h1 {
+    width: 150px;
     color: var(--white, #fff);
     font-family: Poppins;
     font-size: 16px;
@@ -87,18 +84,32 @@
     display: flex;
     text-align: left;
     align-items: start;
-    border: 1px solid green;
   }
-  
+
   .menu__hero-img > img {
-    border: none;  
+    border: none;
   }
-  
-  .menu__hero-icon{
-    height: auto;
+
+  .menu__hero-icon {
     display: flex;
-    align-self:self-start;
-    border: 1px solid salmon;
+    height: 20px;
+    width: auto;
+    align-self: self-start;
   }
 }
 
+@media only screen and (max-width: 904px) and (orietation: landscape) {
+  .menu__hero-text > h1 {
+    width: 150px;
+    color: var(--white, #fff);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: flex;
+    text-align: left;
+    align-items: start;
+  }
+}

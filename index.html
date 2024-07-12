@@ -1,112 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.ico.png"
+      type="image/x-icon"
+    />
+    <title>Gerência de Tecnologia da Informação</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/favicon.ico.png" type="image/x-icon" />
-  <title>Gerência de Tecnologia da Informação</title>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--FONT-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <!--RESET-->
+    <link rel="stylesheet" href="./css/reset.css" />
 
-  <!--RESET-->
-  <link rel="stylesheet" href="./css/reset.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/hero/hero.css" />
+    <!--JS-->
+    <script
+      src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/script.js" defer></script>
+  </head>
 
-  <!--CSS-->
-  <link rel="stylesheet" href="./css/variables.css" />
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/hero/hero.css"/>
-  <!--JS-->
-  <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js" defer></script>
-  <script src="./js/script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <section>
-      <nav class="navbar">
-        <div class="navbar__logo"></div>
-        <button class="navbar__button-menu">
-          <!--Alterar blocos-->
-          <svg id="navbar__button-menu-svg--closing" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
-            viewBox="0 0 31 18" fill="none">
-            <rect class="navbar__button-menu-svg-rect--closing" width="31" height="4" fill="#1C3152" />
-            <rect class="navbar__button-menu-svg-rect--closing" y="7" width="31" height="4" fill="#1C3152" />
-            <rect class="navbar__button-menu-svg-rect--closing" y="14" width="31" height="4" fill="#1C3152" />
-          </svg>
-          <svg id="navbar__button-menu-svg--open" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
-            viewBox="0 0 31 18" fill="none">
-            <line x1="7" y1="0" x2="27" y2="18" stroke="#1C3152" stroke-width="3" />
-            <line x1="27" y1="0" x2="7" y2="18" stroke="#1C3152" stroke-width="3" />
-          </svg>
-        </button>
-        <ul class="navbar__menu-desktop"><!--Alterar classe-->
-          <!--Deixar links-->
-          <div class="navbar__menu-item--hover">SOBRE NÓS</div>
-          <div class="navbar__menu-item--hover">O QUE FAZEMOS?</div>
-          <div class="navbar__menu-item--hover"> EQUIPE</div>
-          <div class="navbar__menu-item--hover">CONTATO</div>
-        </ul>
-        <ul class="navbar__menu-mobile"><!--Alterar classe-->
-          <!--Deixar links-->
-          <div class="navbar__menu-item">SOBRE NÓS</div>
-          <div class="navbar__menu-item">O QUE FAZEMOS?</div>
-          <div class="navbar__menu-item"> EQUIPE</div>
-          <div class="navbar__menu-item">CONTATO</div>
-        </ul>
-      </nav>
-    </section>
-    <section>
-      <!--Fazer a seção do Hero aqui-->
-      <div class="menu__hero">
-          
-        <div class="menu__hero-left">
-          <div class="menu__hero-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-              <path d="M6.76353 1.69208H14.0473C16.8221 1.69208 19.0766 3.89179 19.0766 6.59912V13.7059C19.0766 15.0073 18.5467 16.2554 17.6036 17.1757C16.6604 18.0959 15.3812 18.6129 14.0473 18.6129H6.76353C3.98876 18.6129 1.73425 16.4132 1.73425 13.7059V6.59912C1.73425 5.29769 2.26412 4.04957 3.20729 3.12932C4.15047 2.20907 5.42968 1.69208 6.76353 1.69208ZM6.59011 3.38416C5.7622 3.38416 4.96821 3.70505 4.38279 4.27624C3.79737 4.84743 3.46849 5.62213 3.46849 6.42991V13.8751C3.46849 15.5587 4.86455 16.9208 6.59011 16.9208H14.2207C15.0486 16.9208 15.8426 16.5999 16.4281 16.0287C17.0135 15.4576 17.3424 14.6829 17.3424 13.8751V6.42991C17.3424 4.74629 15.9463 3.38416 14.2207 3.38416H6.59011ZM14.9578 4.65322C15.2453 4.65322 15.5209 4.76464 15.7242 4.96297C15.9275 5.1613 16.0417 5.43029 16.0417 5.71077C16.0417 5.99125 15.9275 6.26025 15.7242 6.45858C15.5209 6.65691 15.2453 6.76833 14.9578 6.76833C14.6703 6.76833 14.3946 6.65691 14.1914 6.45858C13.9881 6.26025 13.8739 5.99125 13.8739 5.71077C13.8739 5.43029 13.9881 5.1613 14.1914 4.96297C14.3946 4.76464 14.6703 4.65322 14.9578 4.65322ZM10.4054 5.92228C11.5553 5.92228 12.6581 6.36797 13.4711 7.16128C14.2842 7.9546 14.741 9.03057 14.741 10.1525C14.741 11.2744 14.2842 12.3504 13.4711 13.1437C12.6581 13.937 11.5553 14.3827 10.4054 14.3827C9.25555 14.3827 8.15278 13.937 7.3397 13.1437C6.52662 12.3504 6.06984 11.2744 6.06984 10.1525C6.06984 9.03057 6.52662 7.9546 7.3397 7.16128C8.15278 6.36797 9.25555 5.92228 10.4054 5.92228ZM10.4054 7.61437C9.7155 7.61437 9.05384 7.88178 8.56599 8.35777C8.07814 8.83376 7.80407 9.47934 7.80407 10.1525C7.80407 10.8256 8.07814 11.4712 8.56599 11.9472C9.05384 12.4232 9.7155 12.6906 10.4054 12.6906C11.0953 12.6906 11.757 12.4232 12.2449 11.9472C12.7327 11.4712 13.0068 10.8256 13.0068 10.1525C13.0068 9.47934 12.7327 8.83376 12.2449 8.35777C11.757 7.88178 11.0953 7.61437 10.4054 7.61437Z" fill="white"/>
+  <body>
+    <header>
+      <section>
+        <nav class="navbar">
+          <div class="navbar__logo"></div>
+          <button class="navbar__button-menu">
+            <!--Alterar blocos-->
+            <svg
+              id="navbar__button-menu-svg--closing"
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="18"
+              viewBox="0 0 31 18"
+              fill="none"
+            >
+              <rect
+                class="navbar__button-menu-svg-rect--closing"
+                width="31"
+                height="4"
+                fill="#1C3152"
+              />
+              <rect
+                class="navbar__button-menu-svg-rect--closing"
+                y="7"
+                width="31"
+                height="4"
+                fill="#1C3152"
+              />
+              <rect
+                class="navbar__button-menu-svg-rect--closing"
+                y="14"
+                width="31"
+                height="4"
+                fill="#1C3152"
+              />
+            </svg>
+            <svg
+              id="navbar__button-menu-svg--open"
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="18"
+              viewBox="0 0 31 18"
+              fill="none"
+            >
+              <line
+                x1="7"
+                y1="0"
+                x2="27"
+                y2="18"
+                stroke="#1C3152"
+                stroke-width="3"
+              />
+              <line
+                x1="27"
+                y1="0"
+                x2="7"
+                y2="18"
+                stroke="#1C3152"
+                stroke-width="3"
+              />
+            </svg>
+          </button>
+          <ul class="navbar__menu-desktop">
+            <!--Alterar classe-->
+            <!--Deixar links-->
+            <div class="navbar__menu-item--hover">SOBRE NÓS</div>
+            <div class="navbar__menu-item--hover">O QUE FAZEMOS?</div>
+            <div class="navbar__menu-item--hover">EQUIPE</div>
+            <div class="navbar__menu-item--hover">CONTATO</div>
+          </ul>
+          <ul class="navbar__menu-mobile">
+            <!--Alterar classe-->
+            <!--Deixar links-->
+            <div class="navbar__menu-item">SOBRE NÓS</div>
+            <div class="navbar__menu-item">O QUE FAZEMOS?</div>
+            <div class="navbar__menu-item">EQUIPE</div>
+            <div class="navbar__menu-item">CONTATO</div>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <!--Fazer a seção do Hero aqui-->
+        <div class="menu__hero">
+          <div class="menu__hero-left">
+            <div class="menu__hero-icon">
+              <svg
+                class="menu__hero-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M6.76353 1.69208H14.0473C16.8221 1.69208 19.0766 3.89179 19.0766 6.59912V13.7059C19.0766 15.0073 18.5467 16.2554 17.6036 17.1757C16.6604 18.0959 15.3812 18.6129 14.0473 18.6129H6.76353C3.98876 18.6129 1.73425 16.4132 1.73425 13.7059V6.59912C1.73425 5.29769 2.26412 4.04957 3.20729 3.12932C4.15047 2.20907 5.42968 1.69208 6.76353 1.69208ZM6.59011 3.38416C5.7622 3.38416 4.96821 3.70505 4.38279 4.27624C3.79737 4.84743 3.46849 5.62213 3.46849 6.42991V13.8751C3.46849 15.5587 4.86455 16.9208 6.59011 16.9208H14.2207C15.0486 16.9208 15.8426 16.5999 16.4281 16.0287C17.0135 15.4576 17.3424 14.6829 17.3424 13.8751V6.42991C17.3424 4.74629 15.9463 3.38416 14.2207 3.38416H6.59011ZM14.9578 4.65322C15.2453 4.65322 15.5209 4.76464 15.7242 4.96297C15.9275 5.1613 16.0417 5.43029 16.0417 5.71077C16.0417 5.99125 15.9275 6.26025 15.7242 6.45858C15.5209 6.65691 15.2453 6.76833 14.9578 6.76833C14.6703 6.76833 14.3946 6.65691 14.1914 6.45858C13.9881 6.26025 13.8739 5.99125 13.8739 5.71077C13.8739 5.43029 13.9881 5.1613 14.1914 4.96297C14.3946 4.76464 14.6703 4.65322 14.9578 4.65322ZM10.4054 5.92228C11.5553 5.92228 12.6581 6.36797 13.4711 7.16128C14.2842 7.9546 14.741 9.03057 14.741 10.1525C14.741 11.2744 14.2842 12.3504 13.4711 13.1437C12.6581 13.937 11.5553 14.3827 10.4054 14.3827C9.25555 14.3827 8.15278 13.937 7.3397 13.1437C6.52662 12.3504 6.06984 11.2744 6.06984 10.1525C6.06984 9.03057 6.52662 7.9546 7.3397 7.16128C8.15278 6.36797 9.25555 5.92228 10.4054 5.92228ZM10.4054 7.61437C9.7155 7.61437 9.05384 7.88178 8.56599 8.35777C8.07814 8.83376 7.80407 9.47934 7.80407 10.1525C7.80407 10.8256 8.07814 11.4712 8.56599 11.9472C9.05384 12.4232 9.7155 12.6906 10.4054 12.6906C11.0953 12.6906 11.757 12.4232 12.2449 11.9472C12.7327 11.4712 13.0068 10.8256 13.0068 10.1525C13.0068 9.47934 12.7327 8.83376 12.2449 8.35777C11.757 7.88178 11.0953 7.61437 10.4054 7.61437Z"
+                  fill="white"
+                />
               </svg>
-              
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                <path d="M16.6644 3.11826C17.1243 3.11826 17.5655 3.29653 17.8907 3.61386C18.2159 3.93118 18.3986 4.36157 18.3986 4.81034V16.6549C18.3986 17.1037 18.2159 17.5341 17.8907 17.8514C17.5655 18.1687 17.1243 18.347 16.6644 18.347H4.52476C4.06481 18.347 3.6237 18.1687 3.29847 17.8514C2.97324 17.5341 2.79053 17.1037 2.79053 16.6549V4.81034C2.79053 4.36157 2.97324 3.93118 3.29847 3.61386C3.6237 3.29653 4.06481 3.11826 4.52476 3.11826H16.6644ZM16.2308 16.2319V11.7479C16.2308 11.0164 15.933 10.3149 15.4029 9.79761C14.8728 9.28037 14.1538 8.98978 13.404 8.98978C12.667 8.98978 11.8085 9.42972 11.3923 10.0896V9.15053H8.97307V16.2319H11.3923V12.0609C11.3923 11.4095 11.9299 10.8765 12.5976 10.8765C12.9196 10.8765 13.2284 11.0012 13.456 11.2234C13.6837 11.4455 13.8116 11.7468 13.8116 12.0609V16.2319H16.2308ZM6.15494 7.82225C6.5413 7.82225 6.91183 7.6725 7.18502 7.40594C7.45822 7.13939 7.6117 6.77786 7.6117 6.4009C7.6117 5.61408 6.96136 4.97109 6.15494 4.97109C5.76629 4.97109 5.39355 5.12173 5.11873 5.38987C4.84391 5.65801 4.68951 6.02169 4.68951 6.4009C4.68951 7.18771 5.34852 7.82225 6.15494 7.82225ZM7.36023 16.2319V9.15053H4.95832V16.2319H7.36023Z" fill="white"/>
+
+              <svg
+                class="menu__hero-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M16.6644 3.11826C17.1243 3.11826 17.5655 3.29653 17.8907 3.61386C18.2159 3.93118 18.3986 4.36157 18.3986 4.81034V16.6549C18.3986 17.1037 18.2159 17.5341 17.8907 17.8514C17.5655 18.1687 17.1243 18.347 16.6644 18.347H4.52476C4.06481 18.347 3.6237 18.1687 3.29847 17.8514C2.97324 17.5341 2.79053 17.1037 2.79053 16.6549V4.81034C2.79053 4.36157 2.97324 3.93118 3.29847 3.61386C3.6237 3.29653 4.06481 3.11826 4.52476 3.11826H16.6644ZM16.2308 16.2319V11.7479C16.2308 11.0164 15.933 10.3149 15.4029 9.79761C14.8728 9.28037 14.1538 8.98978 13.404 8.98978C12.667 8.98978 11.8085 9.42972 11.3923 10.0896V9.15053H8.97307V16.2319H11.3923V12.0609C11.3923 11.4095 11.9299 10.8765 12.5976 10.8765C12.9196 10.8765 13.2284 11.0012 13.456 11.2234C13.6837 11.4455 13.8116 11.7468 13.8116 12.0609V16.2319H16.2308ZM6.15494 7.82225C6.5413 7.82225 6.91183 7.6725 7.18502 7.40594C7.45822 7.13939 7.6117 6.77786 7.6117 6.4009C7.6117 5.61408 6.96136 4.97109 6.15494 4.97109C5.76629 4.97109 5.39355 5.12173 5.11873 5.38987C4.84391 5.65801 4.68951 6.02169 4.68951 6.4009C4.68951 7.18771 5.34852 7.82225 6.15494 7.82225ZM7.36023 16.2319V9.15053H4.95832V16.2319H7.36023Z"
+                  fill="white"
+                />
               </svg>
+            </div>
+
+            <div class="menu__hero-text">
+              <h1>conectando a educação de parnamirim</h1>
+            </div>
           </div>
-          
-          <div class="menu__hero-text">
-            <h1>conectando a educação de parnamirim</h1>
+          <div class="menu__hero-img">
+            <img src="assets/hero_img.svg" alt="" width="70%" height="80%" />
           </div>
-        </div> 
-        <div class="menu__hero-img">
-          <img src="assets/hero_img.svg" alt="" width="70%" height="80%">
         </div>
-
-      </div>
-    </section>
-  </header>
-  <main>
-    <section>
-      <!--Fazer seção Sobre nós aqui-->
-    </section>
-    <section>
-      <!--Fazer seção O que fazemos aqui-->
-    </section>
-    <section>
-      <!--Fazer seção Equipe aqui-->
-    </section>
-  </main>
-  <footer>
-    <section>
-      <!--Fazer seção do contatos aqui-->
-    </section>
-    <section>
-      <!--Fazer o final do footer aqui-->
-    </section>
-  </footer>
-</body>
-
+      </section>
+    </header>
+    <main>
+      <section>
+        <!--Fazer seção Sobre nós aqui-->
+      </section>
+      <section>
+        <!--Fazer seção O que fazemos aqui-->
+      </section>
+      <section>
+        <!--Fazer seção Equipe aqui-->
+      </section>
+    </main>
+    <footer>
+      <section>
+        <!--Fazer seção do contatos aqui-->
+      </section>
+      <section>
+        <!--Fazer o final do footer aqui-->
+      </section>
+    </footer>
+  </body>
 </html>
