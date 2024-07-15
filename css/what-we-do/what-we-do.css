@@ -1,0 +1,30 @@
+.what-we-do {
+  display: flex;
+  margin: 111px 10px 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-we-do__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.what-we-do__title > h4 {
+  color: var(--dark-blue, #1c3152);
+  /* h2 - 36 40 */
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+.title__underline {
+  position: relative;
+  margin-right: 55px;
+  width: 130px;
+  height: 5px;
+  background-color: var(--light-blue, #244f9b);
+}
