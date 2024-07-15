@@ -1,90 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.ico.png"
+      type="image/x-icon"
+    />
+    <title>Gerência de Tecnologia da Informação</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/favicon.ico.png" type="image/x-icon" />
-  <title>Gerência de Tecnologia da Informação</title>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--FONT-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <!--RESET-->
+    <link rel="stylesheet" href="./css/reset.css" />
 
-  <!--RESET-->
-  <link rel="stylesheet" href="./css/reset.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <!-- NAVBAR -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"
+    />
+    <!-- ABOUT-US -->
+    <link rel="stylesheet" href="css/about-us/about-us.css" />
 
-  <!--CSS-->
-  <link rel="stylesheet" href="./css/variables.css" />
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css">
+    <!--JS-->
+    <script
+      src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/script.js" defer></script>
+  </head>
 
-  <!--JS-->
-  <script src="./js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js" defer></script>
-  <script src="./js/script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <section>
-      <nav class="navbar">
-        <div class="navbar__logo"></div>
-        <button class="navbar__button-menu">
-          <!--Alterar blocos-->
-          <svg id="navbar__button-menu-svg--closing" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
-            viewBox="0 0 31 18" fill="none">
-            <rect class="navbar__button-menu-svg-rect--closing" width="31" height="4" fill="#1C3152" />
-            <rect class="navbar__button-menu-svg-rect--closing" y="7" width="31" height="4" fill="#1C3152" />
-            <rect class="navbar__button-menu-svg-rect--closing" y="14" width="31" height="4" fill="#1C3152" />
-          </svg>
-          <svg id="navbar__button-menu-svg--open" xmlns="http://www.w3.org/2000/svg" width="31" height="18"
-            viewBox="0 0 31 18" fill="none">
-            <line x1="7" y1="0" x2="27" y2="18" stroke="#1C3152" stroke-width="3" />
-            <line x1="27" y1="0" x2="7" y2="18" stroke="#1C3152" stroke-width="3" />
-          </svg>
-        </button>
-        <ul class="navbar__menu-desktop"><!--Alterar classe-->
-          <!--Deixar links-->
-          <div class="navbar__menu-item--hover">SOBRE NÓS</div>
-          <div class="navbar__menu-item--hover">O QUE FAZEMOS?</div>
-          <div class="navbar__menu-item--hover"> EQUIPE</div>
-          <div class="navbar__menu-item--hover">CONTATO</div>
-        </ul>
-        <ul class="navbar__menu-mobile"><!--Alterar classe-->
-          <!--Deixar links-->
-          <div class="navbar__menu-item">SOBRE NÓS</div>
-          <div class="navbar__menu-item">O QUE FAZEMOS?</div>
-          <div class="navbar__menu-item"> EQUIPE</div>
-          <div class="navbar__menu-item">CONTATO</div>
-        </ul>
-      </nav>
-    </section>
-    <section>
-      <!--Fazer a seção do Hero aqui-->
-    </section>
-  </header>
-  <main>
-    <section>
-      <!--Fazer seção Sobre nós aqui-->
-    </section>
-    <section>
-      <!--Fazer seção O que fazemos aqui-->
-    </section>
-    <section>
-      <!--Fazer seção Equipe aqui-->
-    </section>
-  </main>
-  <footer>
-    <section>
-      <!--Fazer seção do contatos aqui-->
-    </section>
-    <section>
-      <!--Fazer o final do footer aqui-->
-    </section>
-  </footer>
-</body>
-
+  <body>
+    <header>
+      <section>
+        <nav class="navbar">
+          <div class="navbar__logo"></div>
+          <button class="navbar__button-menu">
+            <!--Alterar blocos-->
+            <svg
+              id="navbar__button-menu-svg--closing"
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="18"
+              viewBox="0 0 31 18"
+              fill="none"
+            >
+              <rect
+                class="navbar__button-menu-svg-rect--closing"
+                width="31"
+                height="4"
+                fill="#1C3152"
+              />
+              <rect
+                class="navbar__button-menu-svg-rect--closing"
+                y="7"
+                width="31"
+                height="4"
+                fill="#1C3152"
+              />
+              <rect
+                class="navbar__button-menu-svg-rect--closing"
+                y="14"
+                width="31"
+                height="4"
+                fill="#1C3152"
+              />
+            </svg>
+            <svg
+              id="navbar__button-menu-svg--open"
+              xmlns="http://www.w3.org/2000/svg"
+              width="31"
+              height="18"
+              viewBox="0 0 31 18"
+              fill="none"
+            >
+              <line
+                x1="7"
+                y1="0"
+                x2="27"
+                y2="18"
+                stroke="#1C3152"
+                stroke-width="3"
+              />
+              <line
+                x1="27"
+                y1="0"
+                x2="7"
+                y2="18"
+                stroke="#1C3152"
+                stroke-width="3"
+              />
+            </svg>
+          </button>
+          <ul class="navbar__menu-desktop">
+            <!--Alterar classe-->
+            <!--Deixar links-->
+            <div class="navbar__menu-item--hover">SOBRE NÓS</div>
+            <div class="navbar__menu-item--hover">O QUE FAZEMOS?</div>
+            <div class="navbar__menu-item--hover">EQUIPE</div>
+            <div class="navbar__menu-item--hover">CONTATO</div>
+          </ul>
+          <ul class="navbar__menu-mobile">
+            <!--Alterar classe-->
+            <!--Deixar links-->
+            <div class="navbar__menu-item">SOBRE NÓS</div>
+            <div class="navbar__menu-item">O QUE FAZEMOS?</div>
+            <div class="navbar__menu-item">EQUIPE</div>
+            <div class="navbar__menu-item">CONTATO</div>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <!--Fazer a seção do Hero aqui-->
+      </section>
+    </header>
+    <main>
+      <section class="about-us">
+        <div class="about-us__content">
+          <div class="about-us__title--underline">
+            <h4>Sobre nós</h4>
+            <span class="title__underline"></span>
+          </div>
+          <p class="about-us__description">
+            Lörem ipsum reabevis okurat ett märyse ryns nesk. Detred eurortad
+            infrara ultran italig. Sotirade mikrov social distansering. Tidyd
+            dyn. Diberen hång. Sper makrosk gala in kvasir, till nisk.
+          </p>
+        </div>
+        <div class="about-us__img">
+          <img class="about-us__img--viewbox" src="assets/about-us.svg" />
+        </div>
+      </section>
+      <section>
+        <!--Fazer seção O que fazemos aqui-->
+      </section>
+      <section>
+        <!--Fazer seção Equipe aqui-->
+      </section>
+    </main>
+    <footer>
+      <section>
+        <!--Fazer seção do contatos aqui-->
+      </section>
+      <section>
+        <!--Fazer o final do footer aqui-->
+      </section>
+    </footer>
+  </body>
 </html>
