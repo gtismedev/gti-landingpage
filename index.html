@@ -30,20 +30,27 @@
     <link rel="stylesheet" href="./css/navbar/menu_desktop.css" />
     <link rel="stylesheet" href="./css/navbar/menu_mobile.css" />
     <!--WHAT-WE-DO-->
+    <link rel="stylesheet" href="css/what-we-do/what-we-do.css" />
+    <!--CARD-->
+    <link rel="stylesheet" href="./css/what-we-do/card.css" />
+    <!--SLIDER-->
     <link
       rel="stylesheet"
-      href="./css/slider/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/what-we-do/what-we-do.css" />
+    <link rel="stylesheet" href="./css//what-we-do/slider.css" />
 
     <!--JS-->
-    <script
-      src="./js/slider/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./js/what-we-do/what-we-do.js"></script>
     <!--NAVBAR-->
     <script src="./js/navbar/navbar.js" defer></script>
+    <!--WHAT-WE-DO-->
+    <script src="./js/what-we-do/what-we-do.js" defer></script>
+    <!--SLIDER-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js//what-we-do/slider.js" defer></script>
   </head>
   <body>
     <header>
@@ -132,6 +139,64 @@
         <div class="what-we-do__title">
           <h4>O que fazemos?</h4>
           <span class="title__underline"></span>
+        </div>
+        <br />
+        <div class="what-we-do__swiper" id="mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">Desenvolvimento</div>
+                <div class="card__icon">
+                  <img src="./assets/devlopement-icon.svg" alt="" />
+                </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">Suporte ao ponto eletrônico</div>
+                <div class="card__icon">
+                  <img src="./assets/digital-icon.svg" alt="" />
+                </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">Manutenção de computadores</div>
+                <div class="card__icon">
+                  <img src="./assets/maintenance-icon.svg" alt="" />
+                </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">
+                  Suporte ao parque tecnológico da educação
+                </div>
+                <div class="card__icon">
+                  <img src="./assets/tech-support-icon.svg" alt="" />
+                </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section>

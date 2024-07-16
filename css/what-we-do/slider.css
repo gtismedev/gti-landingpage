@@ -1,0 +1,13 @@
+.what-we-do__swiper {
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
