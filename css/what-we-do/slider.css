@@ -1,5 +1,5 @@
 .what-we-do__swiper {
-  width: 300px;
+  width: 320px;
   height: 300px;
   position: relative;
 }
@@ -11,4 +11,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-button-prev::after {
+  content: none;
+}
+
+.swiper-button-next::after {
+  content: none;
 }
