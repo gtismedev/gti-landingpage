@@ -1,22 +1,29 @@
-.what-we-do__swiper {
-  width: 320px;
-  height: 300px;
-  position: relative;
-}
+@media only screen and (max-width: 904px) {
+  .what-we-do__swiper--mobile {
+    display: block;
+    width: 320px;
+    height: 300px;
+    position: relative;
+  }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .what-we-do__swiper--desktop {
+    display: none;
+  }
 
-.swiper-button-prev::after {
-  content: none;
-}
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.swiper-button-next::after {
-  content: none;
+  .swiper-button-prev::after {
+    content: none;
+  }
+
+  .swiper-button-next::after {
+    content: none;
+  }
 }
