@@ -2,18 +2,25 @@
   display: none;
 }
 
+.menu-mobile__item {
+  display: none;
+}
+
 @media only screen and (max-width: 904px) {
   .navbar__menu-mobile {
     display: none;
     position: absolute;
     margin: 0;
-    top: 50px;
+    top: 60px;
     padding-top: 14px;
     height: 100%;
     width: 0%;
+    right: 0;
+    z-index: 15;
   }
 
   .menu-mobile__item {
+    display: block;
     width: 156px;
     height: 30px;
     margin-top: 15px;
