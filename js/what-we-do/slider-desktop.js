@@ -1,17 +1,23 @@
 var swiper = new Swiper("#mySwiper__desktop", {
   effect: "coverflow",
   grabCursor: true,
+  loop: true,
   centeredSlides: true,
-  slidesPerView: "3",
+  slidesPerView: "1",
+  speed: 1000,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 });

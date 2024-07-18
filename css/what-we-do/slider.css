@@ -3,10 +3,11 @@
 }
 
 .what-we-do__swiper--desktop {
-  display: block;
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  display: flex;
+  width: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -16,9 +17,10 @@
   height: 300px;
 }
 
-.swiper-slide .card {
+.swiper-slide .card__container {
   display: block;
-  width: 100%;
+  width: 250px;
+  margin-left: 15px;
 }
 
 .swiper-button-prev::after {

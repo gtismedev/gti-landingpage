@@ -15,17 +15,38 @@
   color: var(--dark-blue, #1c3152);
   /* h2 - 36 40 */
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 111.111% */
+  line-height: 40px; /* 111.111% */
   text-transform: uppercase;
 }
 
 .title__underline {
   position: static;
   margin-right: 55px;
-  width: 65px;
-  height: 3px;
+  width: 130px;
+  height: 5px;
   background-color: var(--light-blue, #244f9b);
+}
+
+@media only screen and (max-width: 904px) {
+  .what-we-do__title > h4 {
+    color: var(--dark-blue, #1c3152);
+    /* h2 - 36 40 */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  .title__underline {
+    position: static;
+    margin-right: 55px;
+    width: 65px;
+    height: 3px;
+    background-color: var(--light-blue, #244f9b);
+  }
 }
