@@ -7,6 +7,7 @@ O projeto utiliza as seguintes tecnologias e ferramentas:
 - HTML
 - CSS
 - Javascript
+- Swiper
 
 Requisitos para os desenvolvedores:
 
