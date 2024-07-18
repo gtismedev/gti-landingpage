@@ -43,6 +43,7 @@ menuButton.addEventListener("click", function () {
       });
     }, 400);
   } else {
+    //Altera o menu para mobile
     menuMobile.style.display = "block";
     menuMobile.style.animation = "menu-background-reveal 0.6s linear";
     menuMobile.style.backgroundColor = "#fff";

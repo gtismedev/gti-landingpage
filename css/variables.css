@@ -21,6 +21,6 @@
 }
 
 body {
-  background-color: #212121;
+  background-color: var(--gray, #f9f9f9);
   font-family: Poppins;
 }
