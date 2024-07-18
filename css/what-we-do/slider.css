@@ -1,13 +1,44 @@
+.what-we-do__swiper--mobile {
+  display: none;
+}
+
+.what-we-do__swiper--desktop {
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide .card {
+  display: block;
+  width: 100%;
+}
+
+.swiper-button-prev::after {
+  content: none;
+}
+
+.swiper-button-next::after {
+  content: none;
+}
+
 @media only screen and (max-width: 904px) {
+  .what-we-do__swiper--desktop {
+    display: none;
+  }
+
   .what-we-do__swiper--mobile {
     display: block;
     width: 320px;
     height: 300px;
     position: relative;
-  }
-
-  .what-we-do__swiper--desktop {
-    display: none;
   }
 
   .swiper-slide {
