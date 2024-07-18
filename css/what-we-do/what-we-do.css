@@ -31,6 +31,13 @@
 }
 
 @media only screen and (max-width: 904px) {
+  .what-we-do {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px 0 10px;
+    align-items: center;
+  }
+
   .what-we-do__title > h4 {
     color: var(--dark-blue, #1c3152);
     /* h2 - 36 40 */
