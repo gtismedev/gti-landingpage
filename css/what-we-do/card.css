@@ -1,7 +1,6 @@
 .card__container {
   display: flex;
   margin-top: 67px;
-  width: 80vw;
   justify-content: space-evenly;
 }
 

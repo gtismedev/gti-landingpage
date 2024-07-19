@@ -1,5 +1,9 @@
-.what-we-do__swiper--mobile {
+.what-we-do__mobile--swiper {
   display: none;
+}
+
+.what-we-do__desktop {
+  display: block;
 }
 
 @media only screen and (max-width: 904px) {
@@ -7,7 +11,7 @@
     display: none;
   }
 
-  .what-we-do__swiper--mobile {
+  .what-we-do__mobile--swiper {
     display: block;
     width: 320px;
     height: 300px;
