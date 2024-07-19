@@ -2,9 +2,7 @@
 //   effect: "coverflow",
 //   grabCursor: true,
 //   loop: true,
-//   initialSlide: 4,
 //   centeredSlides: true,
-//   centeredSlidesBounds: true,
 //   slidesPerView: "1",
 //   speed: 1000,
 //   coverflowEffect: {
