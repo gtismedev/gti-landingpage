@@ -1,9 +1,13 @@
 .about-us {
   display: flex;
   margin: 38px 10px 0 10px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 381px;
+}
+
+#about-us {
+  opacity: 0;
 }
 
 .about-us__content {
