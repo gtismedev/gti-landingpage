@@ -2,37 +2,8 @@
   display: none;
 }
 
-.what-we-do__swiper--desktop {
-  display: flex;
-  width: 900px;
-  height: 400px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide .card__container {
-  display: block;
-  width: 250px;
-  margin-left: 15px;
-}
-
-.swiper-button-prev::after {
-  content: none;
-}
-
-.swiper-button-next::after {
-  content: none;
-}
-
 @media only screen and (max-width: 904px) {
-  .what-we-do__swiper--desktop {
+  .what-we-do__desktop {
     display: none;
   }
 
