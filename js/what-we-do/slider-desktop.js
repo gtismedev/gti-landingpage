@@ -22,7 +22,7 @@
 //   },
 // });
 
-var mobileSwiper = new Swiper("#mySwiper__desktop", {
+var desktopSwiper = new Swiper("#mySwiper__desktop", {
   loop: true,
   cssMode: true,
   slidesPerView: 3,
