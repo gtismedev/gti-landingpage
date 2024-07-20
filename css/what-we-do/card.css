@@ -58,6 +58,15 @@
   margin-top: 130px;
 }
 
+@media only screen and (max-width: 1260px) {
+  .cards {
+    scale: 0.7;
+  }
+  .card__container {
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 904px) {
   .card {
     display: flex;
