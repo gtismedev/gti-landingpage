@@ -1,0 +1,17 @@
+.title__underline {
+  position: relative;
+  margin-right: 55px;
+  width: 95px;
+  height: 5px;
+  background-color: var(--light-blue, #244f9b);
+}
+
+@media only screen and (max-width: 904px) {
+  .title__underline {
+    position: relative;
+    margin-right: 55px;
+    width: 47.5px;
+    height: 3px;
+    background-color: var(--light-blue, #244f9b);
+  }
+}

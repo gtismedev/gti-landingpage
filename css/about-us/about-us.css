@@ -1,61 +1,19 @@
 .about-us {
   display: flex;
   margin: 38px 10px 0 10px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 381px;
 }
 
 .about-us__content {
-  padding-left: 75px;
   order: 1;
-}
-
-.about-us__title--underline {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-us__title--underline > h4 {
-  color: var(--dark-blue, #1c3152);
-  /* h4 - 18 20 */
-  font-family: Poppins;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  text-transform: uppercase;
-}
-
-.title__underline {
-  position: relative;
-  margin-right: 55px;
-  width: 95px;
-  height: 5px;
-  background-color: var(--light-blue, #244f9b);
-}
-
-.about-us__description {
-  max-width: 627px;
-  text-align: left;
-  color: var(--black, #191c1f);
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 150% */
-  margin-top: 32px;
 }
 
 .about-us__img {
   margin-top: 5px;
   order: 0;
 }
-
-/* .about-us__img--viewbox {
-  width: 572px;
-  height: 381px;
-} */
 
 @media only screen and (max-width: 904px) {
   .about-us {
@@ -70,53 +28,11 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-  }
-
-  .about-us__title--underline {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-us__title--underline > h4 {
-    color: var(--dark-blue, #1c3152);
-    /* h4 - 18 20 */
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px; /* 111.111% */
-    text-transform: uppercase;
     order: 0;
-  }
-
-  .title__underline {
-    position: relative;
-    margin-right: 55px;
-    width: 47.5px;
-    height: 3px;
-    background-color: var(--light-blue, #244f9b);
-  }
-
-  .about-us__description {
-    width: 300px;
-    text-align: center;
-    color: var(--black, #191c1f);
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 150% */
-    margin-top: 21px;
-    order: 1;
   }
 
   .about-us__img {
     margin-top: 5px;
-    order: 2;
-  }
-
-  .about-us__img--viewbox {
-    width: 300px;
-    height: 199px;
+    order: 1;
   }
 }
