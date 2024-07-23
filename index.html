@@ -43,6 +43,13 @@
     <!--footer-->
     <link rel="stylesheet" href="./css/footer/footer-dev.css">
     <link rel="stylesheet" href="./css/footer/footer.css">
+    <!--Script-footer-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+      });
+  </script>
     <!--JS-->
     <!--NAVBAR-->
     <script src="./js/navbar/navbar.js" defer></script>
@@ -351,24 +358,24 @@
 
           <div class="footer_contact">
             <h1>
-              Telefone: (84) 98893-9666
+              Whatsapp: (84) 98893-9666
               <br>
               proinfoparnamirim@gmail.com
             </h1>
           </div>
-          
         </div>
       </section>
       <section class="footer-dev">
         <!--Fazer o final do footer aqui-->
         <div class="dev_frase">
           <h1>
-            Densenvolvido pela GTI - 2024
+            Densenvolvido pela GTI - <p>© <span id="currentYear"></span></p>
+
           </h1>
         </div>
       </section>
     </footer>
 
-    <script src="./js/delay/delay.js" />
+    <script src="./js/delay/delay.js"></script>
   </body>
 </html>
