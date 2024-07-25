@@ -1,0 +1,228 @@
+.team {
+  background: var(--footer-background);
+  margin-top: 65px;
+  min-height: 314px;
+}
+
+.team__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.team__title > h4 {
+  color: var(--white, #fff);
+  /* h4 - 18 20 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  text-transform: uppercase;
+}
+
+.title__underline {
+  position: relative;
+  margin-right: 27px;
+  width: 35px;
+  height: 3px;
+  background-color: var(--light-blue, #244f9b);
+}
+
+.team__container--scroll {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.container__profile {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.profile__pic {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  z-index: 1;
+  transition: z-;
+}
+
+.profile__pic > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile__pic:hover {
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+}
+
+.profile__info > h6 {
+  width: 67px;
+  height: 19px;
+  color: var(--dark-blue, #1c3152);
+  text-align: center;
+  /* h5 - 16 20 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.profile__info > p {
+  width: 69px;
+  height: 16px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+@keyframes profile__pic_on_hover {
+  from {
+    z-index: 1;
+    opacity: 1;
+  }
+  to {
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .team {
+    background: var(--footer-background);
+    margin-top: 65px;
+    min-height: 314px;
+    max-width: 904px;
+  }
+
+  .team__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .team__title > h4 {
+    color: var(--white, #fff);
+    /* h4 - 18 20 */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    text-transform: uppercase;
+  }
+
+  .title__underline {
+    position: relative;
+    margin-right: 27px;
+    width: 35px;
+    height: 3px;
+    background-color: var(--light-blue, #244f9b);
+  }
+
+  .team__container--scroll {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    white-space: nowrap;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .container__profile {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  .profile__pic {
+    width: 128px;
+    height: 128px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .profile__pic > img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .profile__pic:hover {
+    animation: profile__pic_on_hover 1s ease 1;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .profile__info > h6 {
+    width: 67px;
+    height: 19px;
+    color: var(--dark-blue, #1c3152);
+    text-align: center;
+    /* h5 - 16 20 */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+  }
+
+  .profile__info > p {
+    width: 69px;
+    height: 16px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+  }
+
+  @keyframes profile__pic_on_hover {
+    0% {
+      z-index: 1;
+      opacity: 1;
+    }
+    100% {
+      z-index: -1;
+      opacity: 0.5;
+    }
+  }
+}
