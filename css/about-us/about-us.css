@@ -6,6 +6,10 @@
   min-height: 381px;
 }
 
+#about-us {
+  opacity: 0;
+}
+
 .about-us__content {
   order: 1;
 }
