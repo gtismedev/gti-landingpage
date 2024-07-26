@@ -6,7 +6,7 @@
     text-align: center;
     background: linear-gradient(270deg, #1c3152 63.5%, #3f6eb8 100%);
   }
-  
+
   .hero-text,
   .hero-img,
   .menu__hero-left {
@@ -64,5 +64,4 @@
     text-align: left;
     align-items: start;
   }
-
 }

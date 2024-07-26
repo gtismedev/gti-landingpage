@@ -1,11 +1,7 @@
 .menu__hero {
-  background: linear-gradient(270deg, #1c3152 63.5%, #3f6eb8 100%);
-}
-
-#menu__hero {
   display: flex;
   justify-content: space-between; /* Alinha as divs lado a lado com espaço entre elas */
   align-items: center;
   text-align: center;
-  opacity: 0;
+  background: linear-gradient(270deg, #1c3152 63.5%, #3f6eb8 100%);
 }
