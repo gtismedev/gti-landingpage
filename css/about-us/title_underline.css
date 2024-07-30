@@ -1,4 +1,4 @@
-.title__underline {
+.content__title > .title__underline {
   position: relative;
   margin-right: 55px;
   width: 95px;
@@ -7,7 +7,7 @@
 }
 
 @media only screen and (max-width: 904px) {
-  .title__underline {
+  .content__title > .title__underline {
     position: relative;
     margin-right: 55px;
     width: 47.5px;

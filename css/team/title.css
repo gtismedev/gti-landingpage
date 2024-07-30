@@ -16,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.title__underline {
+.team__title > .title__underline {
   position: relative;
   margin-right: 55px;
   width: 70px;
@@ -43,7 +43,7 @@
     text-transform: uppercase;
   }
 
-  .title__underline {
+  .team__title > .title__underline {
     position: relative;
     margin-right: 27px;
     width: 35px;
