@@ -56,6 +56,16 @@
     <link rel="stylesheet" href="./css/team/profile-pic.css" />
     <link rel="stylesheet" href="./css/team/profile-info.css" />
 
+    <!--footer-->
+    <link rel="stylesheet" href="./css/footer/footer-dev.css" />
+    <link rel="stylesheet" href="./css/footer/footer.css" />
+    <!--Script-footer-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    </script>
     <!--JS-->
     <!--NAVBAR-->
     <script src="./js/navbar/navbar.js" defer></script>
@@ -442,14 +452,42 @@
       </section>
     </main>
     <footer>
-      <section>
+      <section class="footer">
         <!--Fazer seção do contatos aqui-->
+        <div class="footer_logo">
+          <img class="logo" src="assets/logo-gti 2.svg" alt="" />
+        </div>
+
+        <div class="footer_informations">
+          <div class="footer_andress">
+            <h1>
+              Av. Pres. Getúlio Vargas, 151 - Centro
+              <br />
+              Cep - 59141-130 - Parnamirim/RN
+            </h1>
+          </div>
+
+          <div class="footer_contact">
+            <h1>
+              Whatsapp: (84) 98893-9666
+              <br />
+              proinfoparnamirim@gmail.com
+            </h1>
+          </div>
+        </div>
       </section>
-      <section>
+      <section class="footer-dev">
         <!--Fazer o final do footer aqui-->
+        <div class="dev_frase">
+          <h1>
+            Densenvolvido pela GTI -
+            <p>© <span id="currentYear"></span></p>
+          </h1>
+        </div>
       </section>
     </footer>
 
+    <script src="./js/delay/delay.js"></script>
     <script src="./js/delay/delay.js"></script>
   </body>
 </html>
