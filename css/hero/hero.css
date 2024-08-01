@@ -4,7 +4,7 @@
 
 #menu__hero {
   display: flex;
-  justify-content: space-between; /* Alinha as divs lado a lado com espaço entre elas */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   opacity: 0;

@@ -5,12 +5,11 @@
 
 .content__title > h4 {
   color: var(--dark-blue, #1c3152);
-  /* h4 - 18 20 */
   font-family: Poppins;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 40px;
   text-transform: uppercase;
 }
 
@@ -22,7 +21,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 150% */
+  line-height: 25px;
   margin-top: 32px;
 }
 
@@ -34,12 +33,12 @@
 
   .content__title > h4 {
     color: var(--dark-blue, #1c3152);
-    /* h4 - 18 20 */
+
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; /* 111.111% */
+    line-height: 20px;
     text-transform: uppercase;
     order: 0;
   }
@@ -52,7 +51,7 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 150% */
+    line-height: 18px;
     margin-top: 21px;
     order: 1;
   }

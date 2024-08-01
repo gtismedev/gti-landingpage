@@ -29,12 +29,11 @@
   background-color: var(--soft-blue, #2f528a);
   color: var(--white, #fff);
   border-radius: 10px 10px 0 0;
-  /* h5 - 16 20 */
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -97,12 +96,11 @@
     background-color: var(--soft-blue, #2f528a);
     color: var(--white, #fff);
     border-radius: 10px 10px 0 0;
-    /* h5 - 16 20 */
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; /* 125% */
+    line-height: 20px;
     text-transform: uppercase;
   }
 
@@ -119,6 +117,6 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; /* 150% */
+    line-height: 18px;
   }
 }

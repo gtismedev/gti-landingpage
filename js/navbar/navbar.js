@@ -14,28 +14,22 @@ const buttonMenuSvgRectClosing = document.querySelectorAll(
 );
 const buttonMenuSvgOpen = document.querySelector("#button-menu__svg--open");
 
-//Função responsavel por abrir e fechar o menu-burguer
 menuButton.addEventListener("click", function () {
-  //Altera o menu para desktop
   if (menuMobile.style.display === "block") {
-    //Define um "timer" de 750ms para que as animações rodem antes do display alterar para nones
     setTimeout(() => {
       menuMobile.style.display = "none";
     }, 750);
     menuMobile.style.animation = "menu-background-hide 0.8s linear";
     menuMobile.style.width = "0%";
-    //Esconde os itens do menu mobile
     menuItem.forEach((item) => {
       item.style.animation =
         "menu-item-tracking-out 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
     });
-    //Altera a imagem no botao para esconder o "X"
     buttonMenuSvgOpen.style.animation =
       "button-menu-open-hide 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
     setTimeout(() => {
       buttonMenuSvgOpen.style.display = "none";
     }, 350);
-    //Altera a imagem no botao para revelar as barras
     setTimeout(() => {
       buttonMenuSvgRectClosing.forEach((item) => {
         buttonMenuSvgClosing.style.display = "block";
@@ -43,24 +37,20 @@ menuButton.addEventListener("click", function () {
       });
     }, 400);
   } else {
-    //Altera o menu para mobile
     menuMobile.style.display = "block";
     menuMobile.style.animation = "menu-background-reveal 0.6s linear";
     menuMobile.style.backgroundColor = "#fff";
     menuMobile.style.width = "190px";
-    //Mostra os itens do menu mobile
     menuItem.forEach((item) => {
       item.style.animation =
         "menu-item-tracking-in 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both";
     });
-    //Altera a imagem no botao para esconder as barras
     buttonMenuSvgRectClosing.forEach((item) => {
       item.style.animation = "button-menu-closed-hide 0.4s linear";
       setTimeout(() => {
         buttonMenuSvgClosing.style.display = "none";
       }, 350);
     });
-    //Altera a imagem no botao para revelar o "X"
     setTimeout(() => {
       buttonMenuSvgOpen.style.animation =
         "button-menu-open-reveal 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
@@ -69,7 +59,6 @@ menuButton.addEventListener("click", function () {
   }
 });
 
-//Corrige o bug que quebrava a navbar ao abrir o menu-burguer em mobile e rotacionar a tela para desktop
 function fixMenuMobileDisplay() {
   navWidth = window.innerWidth;
   console.log(typeof navWidth + "\n" + navWidth);
