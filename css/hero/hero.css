@@ -2,10 +2,13 @@
   background: linear-gradient(270deg, #1c3152 63.5%, #3f6eb8 100%);
 }
 
-#menu__hero {
+.menu__hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+
+#menu__hero {
   opacity: 0;
 }
