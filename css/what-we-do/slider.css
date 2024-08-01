@@ -5,6 +5,7 @@
 .what-we-do__desktop {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 @media only screen and (max-width: 904px) {
