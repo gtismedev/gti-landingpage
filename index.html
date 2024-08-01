@@ -136,12 +136,26 @@
           </svg>
         </button>
         <ul class="navbar__menu-desktop">
-          <div class="menu-desktop__item--hover"><a href="">SOBRE NÓS</a></div>
           <div class="menu-desktop__item--hover">
-            <a href="">O QUE FAZEMOS?</a>
+            <a href="#about-us">SOBRE NÓS</a>
           </div>
-          <div class="menu-desktop__item--hover"><a href="">EQUIPE</a></div>
-          <div class="menu-desktop__item--hover"><a href="">CONTATO</a></div>
+          <div class="menu-desktop__item--hover">
+            <a href="#what-we-do">O QUE FAZEMOS?</a>
+          </div>
+          <div class="menu-desktop__item--hover">
+            <a href="#team">EQUIPE</a>
+          </div>
+          <div class="menu-desktop__item--hover">
+            <a href="#footer">CONTATO</a>
+          </div>
+        </ul>
+        <ul class="navbar__menu-mobile">
+          <div class="menu-mobile__item"><a href="#about-us">SOBRE NÓS</a></div>
+          <div class="menu-mobile__item">
+            <a href="#what-we-do">O QUE FAZEMOS?</a>
+          </div>
+          <div class="menu-mobile__item"><a href="#team">EQUIPE</a></div>
+          <div class="menu-mobile__item"><a href="#footer">CONTATO</a></div>
         </ul>
         <ul class="navbar__menu-mobile">
           <div class="menu-mobile__item"><a href="">SOBRE NÓS</a></div>
@@ -204,7 +218,7 @@
           <img class="img__viewbox" src="assets/about-us.svg" />
         </div>
       </section>
-      <section class="what-we-do">
+      <section class="what-we-do" id="what-we-do">
         <div class="what-we-do__title">
           <h4>O que fazemos?</h4>
           <span class="title__underline"></span>
@@ -316,7 +330,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="team__title">
           <h4>Equipe</h4>
           <span class="title__underline"></span>
@@ -452,7 +466,7 @@
       </section>
     </main>
     <footer>
-      <section class="footer">
+      <section class="footer" id="footer">
         <!--Fazer seção do contatos aqui-->
         <div class="footer_logo">
           <img class="logo" src="assets/logo-gti 2.svg" alt="" />
@@ -480,14 +494,12 @@
         <!--Fazer o final do footer aqui-->
         <div class="dev_frase">
           <h1>
-            Densenvolvido pela GTI -
+            Densenvolvido pela GTI&nbsp;-&nbsp;
             <p>© <span id="currentYear"></span></p>
           </h1>
         </div>
       </section>
     </footer>
-
-    <script src="./js/delay/delay.js"></script>
     <script src="./js/delay/delay.js"></script>
   </body>
 </html>

@@ -20,6 +20,10 @@
   --button-size: 1.125rem;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--gray, #f9f9f9);
   font-family: Poppins;
