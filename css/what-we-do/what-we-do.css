@@ -8,7 +8,9 @@
 .what-we-do__title {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   margin-bottom: 10px;
+  height: 40px;
 }
 
 .what-we-do__title > h4 {
