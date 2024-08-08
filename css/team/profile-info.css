@@ -13,7 +13,6 @@
 }
 
 .profile__info > h6 {
-  width: 90px;
   height: 30px;
   color: var(--dark-blue, #1c3152);
   /* h3 - 24 30 */
@@ -26,7 +25,6 @@
 }
 
 .profile__info > p {
-  width: 69px;
   height: 16px;
   color: #000;
   text-align: center;
@@ -53,13 +51,12 @@
   }
 
   .profile__info > h6 {
-    width: 65px;
     height: 20px;
     color: var(--dark-blue, #1c3152);
     text-align: center;
     /* h5 - 16 20 */
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px; /* 125% */
@@ -67,7 +64,6 @@
   }
 
   .profile__info > p {
-    width: 69px;
     height: 16px;
     color: #000;
     text-align: center;
