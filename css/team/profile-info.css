@@ -13,7 +13,6 @@
 }
 
 .profile__info > h6 {
-  width: 90px;
   height: 30px;
   color: var(--dark-blue, #1c3152);
   font-family: Poppins;
@@ -25,7 +24,6 @@
 }
 
 .profile__info > p {
-  width: 69px;
   height: 16px;
   color: #000;
   text-align: center;
@@ -52,12 +50,11 @@
   }
 
   .profile__info > h6 {
-    width: 65px;
     height: 20px;
     color: var(--dark-blue, #1c3152);
     text-align: center;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
@@ -65,7 +62,6 @@
   }
 
   .profile__info > p {
-    width: 69px;
     height: 16px;
     color: #000;
     text-align: center;
