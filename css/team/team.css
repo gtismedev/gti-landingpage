@@ -1,0 +1,14 @@
+.team {
+  background: var(--footer-background);
+  margin-top: 80px;
+  min-height: 500px;
+}
+
+@media only screen and (max-width: 904px) {
+  .team {
+    background: var(--footer-background);
+    margin-top: 65px;
+    min-height: 314px;
+    max-width: 904px;
+  }
+}

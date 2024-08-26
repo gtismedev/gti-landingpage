@@ -1,0 +1,39 @@
+.team__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 75px;
+  padding-bottom: 50px;
+}
+
+.container__profile {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px 15px 30px;
+}
+
+@media only screen and (max-width: 904px) {
+  .team__container--scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    overflow: auto;
+    white-space: nowrap;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  .container__profile {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+}

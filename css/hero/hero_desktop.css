@@ -1,0 +1,39 @@
+.hero-img,
+.menu__hero-left {
+  width: 100%;
+  height: 100%;
+}
+
+.menu__hero-left {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  padding-left: 82px;
+  min-height: 562px;
+  justify-content: center;
+}
+
+.hero-text > h1 {
+  width: 530px;
+  color: var(--white, #fff);
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  display: flex;
+  text-align: left;
+  align-items: start;
+}
+
+.hero-img > img {
+  border: none;
+}
+
+.hero-icon {
+  display: flex;
+  height: 50px;
+  width: auto;
+  align-self: self-start;
+}

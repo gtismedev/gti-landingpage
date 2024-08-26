@@ -6,61 +6,47 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <title>Gerência de Tecnologia da Informação</title>
 
-    <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <!--RESET-->
     <link rel="stylesheet" href="./css/reset.css" />
-
-    <!--CSS-->
     <link rel="stylesheet" href="./css/variables.css" />
-    <!--NAVBAR-->
     <link rel="stylesheet" href="./css/navbar/navbar.css" />
     <link rel="stylesheet" href="./css/navbar/logo.css" />
     <link rel="stylesheet" href="./css/navbar/button.css" />
     <link rel="stylesheet" href="./css/navbar/menu_desktop.css" />
     <link rel="stylesheet" href="./css/navbar/menu_mobile.css" />
-    <!--HERO-->
     <link rel="stylesheet" href="./css/hero/hero.css" />
-    <!-- ABOUT-US -->
-    <link rel="stylesheet" href="css/about-us/about-us.css" />
-    <!--WHAT-WE-DO-->
+    <link rel="stylesheet" href="./css/hero/hero_desktop.css" />
+    <link rel="stylesheet" href="./css/hero/hero_mobile.css" />
+    <link rel="stylesheet" href="./css/about-us/about-us.css" />
+    <link rel="stylesheet" href="./css/about-us/content.css" />
+    <link rel="stylesheet" href="./css/about-us/title_underline.css" />
+    <link rel="stylesheet" href="./css/about-us/img.css" />
     <link rel="stylesheet" href="css/what-we-do/what-we-do.css" />
-    <!--CARD-->
     <link rel="stylesheet" href="./css/what-we-do/card.css" />
-    <!--SLIDER-->
+    <link rel="stylesheet" href="./css/what-we-do/slider.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/what-we-do/slider.css" />
-    <!--FOOTER-->
+    <link rel="stylesheet" href="./css/team/team.css" />
+    <link rel="stylesheet" href="./css/team/title.css" />
+    <link rel="stylesheet" href="./css/team/container.css" />
+    <link rel="stylesheet" href="./css/team/profile-pic.css" />
+    <link rel="stylesheet" href="./css/team/profile-info.css" />
     <link rel="stylesheet" href="./css/footer/footer-dev.css" />
     <link rel="stylesheet" href="./css/footer/footer.css" />
-  
-    <!--JS-->
-    <!--NAVBAR-->
-    <script src="./js/navbar/navbar.js" defer></script>
-    <!--WHAT-WE-DO-->
-    <!--SLIDER-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="./js/what-we-do/slider-mobile.js" defer></script>
-    <!--FOOTER-->
-    <script src="./js/footer/footer.js"></script>
   </head>
   <body>
     <header>
       <section class="navbar">
         <span id="navbar-width" style="display: none"></span>
-        <div class="navbar__logo"></div>
+        <div class="navbar__logo"><a href="#"></a></div>
         <button class="navbar__button-menu">
           <svg
             id="button-menu__svg--closing"
@@ -118,225 +104,339 @@
           </svg>
         </button>
         <ul class="navbar__menu-desktop">
-          <div class="menu-desktop__item--hover"><a href="">SOBRE NÓS</a></div>
           <div class="menu-desktop__item--hover">
-            <a href="">O QUE FAZEMOS?</a>
+            <a href="#about-us">SOBRE NÓS</a>
           </div>
-          <div class="menu-desktop__item--hover"><a href="">EQUIPE</a></div>
-          <div class="menu-desktop__item--hover"><a href="">CONTATO</a></div>
+          <div class="menu-desktop__item--hover">
+            <a href="#what-we-do">O QUE FAZEMOS?</a>
+          </div>
+          <div class="menu-desktop__item--hover">
+            <a href="#team">EQUIPE</a>
+          </div>
+          <div class="menu-desktop__item--hover">
+            <a href="#footer">CONTATO</a>
+          </div>
         </ul>
         <ul class="navbar__menu-mobile">
-          <div class="menu-mobile__item"><a href="">SOBRE NÓS</a></div>
-          <div class="menu-mobile__item"><a href="">O QUE FAZEMOS?</a></div>
-          <div class="menu-mobile__item"><a href="">EQUIPE</a></div>
-          <div class="menu-mobile__item"><a href="">CONTATO</a></div>
+          <div class="menu-mobile__item">
+            <a id="item__link" href="#about-us">SOBRE NÓS</a>
+          </div>
+          <div class="menu-mobile__item">
+            <a id="item__link" href="#what-we-do">O QUE FAZEMOS?</a>
+          </div>
+          <div class="menu-mobile__item">
+            <a id="item__link" href="#team">EQUIPE</a>
+          </div>
+          <div class="menu-mobile__item">
+            <a id="item__link" href="#footer">CONTATO</a>
+          </div>
         </ul>
       </section>
-      <section>
-        <section>
-          <!--Remover-->
-          <div class="menu__hero">
-            <div id="menu__hero">
-              <div class="menu__hero-left">
-                <div class="menu__hero-icon">
-                  <svg
-                    class="menu__hero-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 21 21"
-                    fill="none"
-                  >
-                    <path
-                      d="M6.76353 1.69208H14.0473C16.8221 1.69208 19.0766 3.89179 19.0766 6.59912V13.7059C19.0766 15.0073 18.5467 16.2554 17.6036 17.1757C16.6604 18.0959 15.3812 18.6129 14.0473 18.6129H6.76353C3.98876 18.6129 1.73425 16.4132 1.73425 13.7059V6.59912C1.73425 5.29769 2.26412 4.04957 3.20729 3.12932C4.15047 2.20907 5.42968 1.69208 6.76353 1.69208ZM6.59011 3.38416C5.7622 3.38416 4.96821 3.70505 4.38279 4.27624C3.79737 4.84743 3.46849 5.62213 3.46849 6.42991V13.8751C3.46849 15.5587 4.86455 16.9208 6.59011 16.9208H14.2207C15.0486 16.9208 15.8426 16.5999 16.4281 16.0287C17.0135 15.4576 17.3424 14.6829 17.3424 13.8751V6.42991C17.3424 4.74629 15.9463 3.38416 14.2207 3.38416H6.59011ZM14.9578 4.65322C15.2453 4.65322 15.5209 4.76464 15.7242 4.96297C15.9275 5.1613 16.0417 5.43029 16.0417 5.71077C16.0417 5.99125 15.9275 6.26025 15.7242 6.45858C15.5209 6.65691 15.2453 6.76833 14.9578 6.76833C14.6703 6.76833 14.3946 6.65691 14.1914 6.45858C13.9881 6.26025 13.8739 5.99125 13.8739 5.71077C13.8739 5.43029 13.9881 5.1613 14.1914 4.96297C14.3946 4.76464 14.6703 4.65322 14.9578 4.65322ZM10.4054 5.92228C11.5553 5.92228 12.6581 6.36797 13.4711 7.16128C14.2842 7.9546 14.741 9.03057 14.741 10.1525C14.741 11.2744 14.2842 12.3504 13.4711 13.1437C12.6581 13.937 11.5553 14.3827 10.4054 14.3827C9.25555 14.3827 8.15278 13.937 7.3397 13.1437C6.52662 12.3504 6.06984 11.2744 6.06984 10.1525C6.06984 9.03057 6.52662 7.9546 7.3397 7.16128C8.15278 6.36797 9.25555 5.92228 10.4054 5.92228ZM10.4054 7.61437C9.7155 7.61437 9.05384 7.88178 8.56599 8.35777C8.07814 8.83376 7.80407 9.47934 7.80407 10.1525C7.80407 10.8256 8.07814 11.4712 8.56599 11.9472C9.05384 12.4232 9.7155 12.6906 10.4054 12.6906C11.0953 12.6906 11.757 12.4232 12.2449 11.9472C12.7327 11.4712 13.0068 10.8256 13.0068 10.1525C13.0068 9.47934 12.7327 8.83376 12.2449 8.35777C11.757 7.88178 11.0953 7.61437 10.4054 7.61437Z"
-                      fill="white"
-                    />
-                  </svg>
-
-                  <svg
-                    class="menu__hero-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 21 21"
-                    fill="none"
-                  >
-                    <path
-                      d="M16.6644 3.11826C17.1243 3.11826 17.5655 3.29653 17.8907 3.61386C18.2159 3.93118 18.3986 4.36157 18.3986 4.81034V16.6549C18.3986 17.1037 18.2159 17.5341 17.8907 17.8514C17.5655 18.1687 17.1243 18.347 16.6644 18.347H4.52476C4.06481 18.347 3.6237 18.1687 3.29847 17.8514C2.97324 17.5341 2.79053 17.1037 2.79053 16.6549V4.81034C2.79053 4.36157 2.97324 3.93118 3.29847 3.61386C3.6237 3.29653 4.06481 3.11826 4.52476 3.11826H16.6644ZM16.2308 16.2319V11.7479C16.2308 11.0164 15.933 10.3149 15.4029 9.79761C14.8728 9.28037 14.1538 8.98978 13.404 8.98978C12.667 8.98978 11.8085 9.42972 11.3923 10.0896V9.15053H8.97307V16.2319H11.3923V12.0609C11.3923 11.4095 11.9299 10.8765 12.5976 10.8765C12.9196 10.8765 13.2284 11.0012 13.456 11.2234C13.6837 11.4455 13.8116 11.7468 13.8116 12.0609V16.2319H16.2308ZM6.15494 7.82225C6.5413 7.82225 6.91183 7.6725 7.18502 7.40594C7.45822 7.13939 7.6117 6.77786 7.6117 6.4009C7.6117 5.61408 6.96136 4.97109 6.15494 4.97109C5.76629 4.97109 5.39355 5.12173 5.11873 5.38987C4.84391 5.65801 4.68951 6.02169 4.68951 6.4009C4.68951 7.18771 5.34852 7.82225 6.15494 7.82225ZM7.36023 16.2319V9.15053H4.95832V16.2319H7.36023Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <div class="menu__hero-text">
-                  <h1>conectando a educação de parnamirim</h1>
-                </div>
-              </div>
-
-              <div class="menu__hero-img">
-                <img
-                  src="assets/hero_img.svg"
-                  alt=""
-                  width="70%"
-                  height="80%"
+      <section class="menu">
+        <div class="menu__hero" id="menu__hero">
+          <div class="menu__hero-left">
+            <div class="hero-icon">
+              <svg
+                class="hero-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M6.76353 1.69208H14.0473C16.8221 1.69208 19.0766 3.89179 19.0766 6.59912V13.7059C19.0766 15.0073 18.5467 16.2554 17.6036 17.1757C16.6604 18.0959 15.3812 18.6129 14.0473 18.6129H6.76353C3.98876 18.6129 1.73425 16.4132 1.73425 13.7059V6.59912C1.73425 5.29769 2.26412 4.04957 3.20729 3.12932C4.15047 2.20907 5.42968 1.69208 6.76353 1.69208ZM6.59011 3.38416C5.7622 3.38416 4.96821 3.70505 4.38279 4.27624C3.79737 4.84743 3.46849 5.62213 3.46849 6.42991V13.8751C3.46849 15.5587 4.86455 16.9208 6.59011 16.9208H14.2207C15.0486 16.9208 15.8426 16.5999 16.4281 16.0287C17.0135 15.4576 17.3424 14.6829 17.3424 13.8751V6.42991C17.3424 4.74629 15.9463 3.38416 14.2207 3.38416H6.59011ZM14.9578 4.65322C15.2453 4.65322 15.5209 4.76464 15.7242 4.96297C15.9275 5.1613 16.0417 5.43029 16.0417 5.71077C16.0417 5.99125 15.9275 6.26025 15.7242 6.45858C15.5209 6.65691 15.2453 6.76833 14.9578 6.76833C14.6703 6.76833 14.3946 6.65691 14.1914 6.45858C13.9881 6.26025 13.8739 5.99125 13.8739 5.71077C13.8739 5.43029 13.9881 5.1613 14.1914 4.96297C14.3946 4.76464 14.6703 4.65322 14.9578 4.65322ZM10.4054 5.92228C11.5553 5.92228 12.6581 6.36797 13.4711 7.16128C14.2842 7.9546 14.741 9.03057 14.741 10.1525C14.741 11.2744 14.2842 12.3504 13.4711 13.1437C12.6581 13.937 11.5553 14.3827 10.4054 14.3827C9.25555 14.3827 8.15278 13.937 7.3397 13.1437C6.52662 12.3504 6.06984 11.2744 6.06984 10.1525C6.06984 9.03057 6.52662 7.9546 7.3397 7.16128C8.15278 6.36797 9.25555 5.92228 10.4054 5.92228ZM10.4054 7.61437C9.7155 7.61437 9.05384 7.88178 8.56599 8.35777C8.07814 8.83376 7.80407 9.47934 7.80407 10.1525C7.80407 10.8256 8.07814 11.4712 8.56599 11.9472C9.05384 12.4232 9.7155 12.6906 10.4054 12.6906C11.0953 12.6906 11.757 12.4232 12.2449 11.9472C12.7327 11.4712 13.0068 10.8256 13.0068 10.1525C13.0068 9.47934 12.7327 8.83376 12.2449 8.35777C11.757 7.88178 11.0953 7.61437 10.4054 7.61437Z"
+                  fill="white"
                 />
-              </div>
+              </svg>
+
+              <svg
+                class="hero-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M16.6644 3.11826C17.1243 3.11826 17.5655 3.29653 17.8907 3.61386C18.2159 3.93118 18.3986 4.36157 18.3986 4.81034V16.6549C18.3986 17.1037 18.2159 17.5341 17.8907 17.8514C17.5655 18.1687 17.1243 18.347 16.6644 18.347H4.52476C4.06481 18.347 3.6237 18.1687 3.29847 17.8514C2.97324 17.5341 2.79053 17.1037 2.79053 16.6549V4.81034C2.79053 4.36157 2.97324 3.93118 3.29847 3.61386C3.6237 3.29653 4.06481 3.11826 4.52476 3.11826H16.6644ZM16.2308 16.2319V11.7479C16.2308 11.0164 15.933 10.3149 15.4029 9.79761C14.8728 9.28037 14.1538 8.98978 13.404 8.98978C12.667 8.98978 11.8085 9.42972 11.3923 10.0896V9.15053H8.97307V16.2319H11.3923V12.0609C11.3923 11.4095 11.9299 10.8765 12.5976 10.8765C12.9196 10.8765 13.2284 11.0012 13.456 11.2234C13.6837 11.4455 13.8116 11.7468 13.8116 12.0609V16.2319H16.2308ZM6.15494 7.82225C6.5413 7.82225 6.91183 7.6725 7.18502 7.40594C7.45822 7.13939 7.6117 6.77786 7.6117 6.4009C7.6117 5.61408 6.96136 4.97109 6.15494 4.97109C5.76629 4.97109 5.39355 5.12173 5.11873 5.38987C4.84391 5.65801 4.68951 6.02169 4.68951 6.4009C4.68951 7.18771 5.34852 7.82225 6.15494 7.82225ZM7.36023 16.2319V9.15053H4.95832V16.2319H7.36023Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div class="hero-text">
+              <h1>conectando a educação de parnamirim</h1>
             </div>
           </div>
-        </section>
+          <div class="hero-img">
+            <img src="assets/hero_img.svg" alt="" width="70%" height="80%" />
+          </div>
+        </div>
       </section>
     </header>
     <main>
       <section id="about-us" class="about-us">
         <div class="about-us__content">
-          <div class="about-us__title--underline">
+          <div class="content__title">
             <h4>Sobre nós</h4>
             <span class="title__underline"></span>
           </div>
-          <p class="about-us__description">
+          <p class="content__description">
             Lörem ipsum reabevis okurat ett märyse ryns nesk. Detred eurortad
             infrara ultran italig. Sotirade mikrov social distansering. Tidyd
             dyn. Diberen hång. Sper makrosk gala in kvasir, till nisk.
           </p>
         </div>
         <div class="about-us__img">
-          <img class="about-us__img--viewbox" src="assets/about-us.svg" />
+          <img class="img__viewbox" src="assets/about-us.svg" />
         </div>
       </section>
-      <section>
-        <section class="what-we-do">
-          <div class="what-we-do__title">
-            <h4>O que fazemos?</h4>
-            <span class="title__underline"></span>
-          </div>
-          <!--Carrousel mobile-->
-          <div class="what-we-do__swiper--mobile" id="mySwiper__mobile">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__title">Desenvolvimento</div>
-                  <div class="card__icon">
-                    <img src="./assets/devlopement-icon.svg" alt="" />
-                  </div>
-                  <div class="card__description">
-                    Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
-                    beplarat bes ragen.
-                  </div>
+      <section class="what-we-do" id="what-we-do">
+        <div class="what-we-do__title">
+          <h4>O que fazemos?</h4>
+          <span class="title__underline"></span>
+        </div>
+        <div class="what-we-do__mobile--swiper" id="mySwiper__mobile">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">Desenvolvimento</div>
+                <div class="card__icon">
+                  <img src="./assets/devlopement-icon.svg" alt="" />
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__title">Suporte ao ponto eletrônico</div>
-                  <div class="card__icon">
-                    <img src="./assets/digital-icon.svg" alt="" />
-                  </div>
-                  <div class="card__description">
-                    Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
-                    beplarat bes ragen.
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__title">Manutenção de computadores</div>
-                  <div class="card__icon">
-                    <img src="./assets/maintenance-icon.svg" alt="" />
-                  </div>
-                  <div class="card__description">
-                    Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
-                    beplarat bes ragen.
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card__title">
-                    Suporte ao parque tecnológico da educação
-                  </div>
-                  <div class="card__icon">
-                    <img src="./assets/tech-support-icon.svg" alt="" />
-                  </div>
-                  <div class="card__description">
-                    Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
-                    beplarat bes ragen.
-                  </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next">
-              <img src="assets/ei_arrow-right.svg" alt="" srcset="" />
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">Suporte ao ponto eletrônico</div>
+                <div class="card__icon">
+                  <img src="./assets/digital-icon.svg" alt="" />
+                </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
+                </div>
+              </div>
             </div>
-            <div class="swiper-button-prev">
-              <img src="assets/ei_arrow-left.svg" alt="" srcset="" />
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">Manutenção de computadores</div>
+                <div class="card__icon">
+                  <img src="./assets/maintenance-icon.svg" alt="" />
+                </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
+                </div>
+              </div>
             </div>
-          </div>
-          <!--Carrousel desktop-->
-          <div class="what-we-do__swiper--desktop" id="mySwiper__desktop">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card__container">
-                  <div class="card">
-                    <div class="card__title">Desenvolvimento</div>
-                    <div class="card__icon">
-                      <img src="./assets/devlopement-icon.svg" alt="" />
-                    </div>
-                    <div class="card__description">
-                      Lörem ipsum vatt tetraskade. Anade topsa och igun.
-                      Sotähinde beplarat bes ragen.
-                    </div>
-                  </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card__title">
+                  Suporte ao parque tecnológico da educação
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card__container">
-                  <div class="card">
-                    <div class="card__title">Suporte ao ponto eletrônico</div>
-                    <div class="card__icon">
-                      <img src="./assets/digital-icon.svg" alt="" />
-                    </div>
-                    <div class="card__description">
-                      Lörem ipsum vatt tetraskade. Anade topsa och igun.
-                      Sotähinde beplarat bes ragen.
-                    </div>
-                  </div>
+                <div class="card__icon">
+                  <img src="./assets/tech-support-icon.svg" alt="" />
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card__container">
-                  <div class="card">
-                    <div class="card__title">Manutenção de computadores</div>
-                    <div class="card__icon">
-                      <img src="./assets/maintenance-icon.svg" alt="" />
-                    </div>
-                    <div class="card__description">
-                      Lörem ipsum vatt tetraskade. Anade topsa och igun.
-                      Sotähinde beplarat bes ragen.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card__container">
-                  <div class="card">
-                    <div class="card__title">
-                      Suporte ao parque tecnológico da educação
-                    </div>
-                    <div class="card__icon">
-                      <img src="./assets/tech-support-icon.svg" alt="" />
-                    </div>
-                    <div class="card__description">
-                      Lörem ipsum vatt tetraskade. Anade topsa och igun.
-                      Sotähinde beplarat bes ragen.
-                    </div>
-                  </div>
+                <div class="card__description">
+                  Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                  beplarat bes ragen.
                 </div>
               </div>
             </div>
           </div>
-        </section>
+          <div class="swiper-button-next btnNextMobile">
+            <img src="assets/ei_arrow-right.svg" alt="" srcset="" />
+          </div>
+          <div class="swiper-button-prev btnPrevMobile">
+            <img src="assets/ei_arrow-left.svg" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="what-we-do__desktop">
+          <div class="card__container">
+            <div class="cards card-1">
+              <div class="card__title">Desenvolvimento</div>
+              <div class="card__icon">
+                <img src="./assets/devlopement-icon.svg" alt="" />
+              </div>
+              <div class="card__description">
+                Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                beplarat bes ragen.
+              </div>
+            </div>
+            <div class="cards card-2">
+              <div class="card__title">Suporte ao ponto eletrônico</div>
+              <div class="card__icon">
+                <img src="./assets/digital-icon.svg" alt="" />
+              </div>
+              <div class="card__description">
+                Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                beplarat bes ragen.
+              </div>
+            </div>
+            <div class="cards card-3">
+              <div class="card__title">Manutenção de computadores</div>
+              <div class="card__icon">
+                <img src="./assets/maintenance-icon.svg" alt="" />
+              </div>
+              <div class="card__description">
+                Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                beplarat bes ragen.
+              </div>
+            </div>
+            <div class="cards card-4">
+              <div class="card__title">
+                Suporte ao parque tecnológico da educação
+              </div>
+              <div class="card__icon">
+                <img src="./assets/tech-support-icon.svg" alt="" />
+              </div>
+              <div class="card__description">
+                Lörem ipsum vatt tetraskade. Anade topsa och igun. Sotähinde
+                beplarat bes ragen.
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
-        <!--Fazer seção Equipe aqui-->
+      <section class="team" id="team">
+        <div class="team__title">
+          <h4>Equipe</h4>
+          <span class="title__underline"></span>
+        </div>
+        <div class="team__container--scroll team__container">
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Paulo.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Paulo</h6>
+              <p>Coordenador</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/RodrigoLouco.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Rodrigo</h6>
+              <p>Chefe de Setor</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Ailton.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Ailton</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Hercules.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Hercules</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/FelipeAndrade.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Felipe Andrade</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Pedro.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Pedro</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Victor.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Victor</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/FelipeMiguel.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Felipe Miguel</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Aramys.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Aramys</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Jotinha.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Jotinha</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Jonata.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Jonata</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/Profile/Simon.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Simon</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/profile-pic.png" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Luiz</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+          <div class="container__profile">
+            <div class="profile__pic">
+              <img src="./assets/profile-pic.png" alt="" />
+            </div>
+            <div class="profile__info">
+              <h6>Franklin</h6>
+              <p>Estagiario</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <section class="footer" id="footer">
-        <!--Fazer seção do contatos aqui-->
         <div class="footer_logo">
           <img class="logo" src="assets/logo-gti 2.svg" alt="" />
         </div>
@@ -360,7 +460,6 @@
         </div>
       </section>
       <section class="footer-dev">
-        <!--Fazer o final do footer aqui-->
         <div class="dev_frase">
           <h1>
             Densenvolvido pela GTI&nbsp;-&nbsp;
@@ -371,5 +470,9 @@
     </footer>
 
     <script src="./js/delay/delay.js"></script>
+    <script src="./js/navbar/navbar.js" defer></script>
+    <script src="./js/what-we-do/slider-mobile.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/footer/footer.js"></script>
   </body>
 </html>

@@ -6,10 +6,6 @@
   align-items: center;
 }
 
-/* .footer_andress, .footer_contact{
-  align-content: center;
-} */
-
 .footer_informations{
   display: flex;
   align-items: center;
