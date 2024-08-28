@@ -25,11 +25,11 @@
  height: 206px;
 }
 
-.footer_andress > h1 {
+.footer_andress > h2 {
   color: #fff;
   text-align: center;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -37,11 +37,11 @@
   text-align: start;
 }
 
-.footer_contact > h1 {
+.footer_contact > h2 {
   color: #fff;
   text-align: center;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px; 
@@ -80,7 +80,7 @@
     padding: 0px 0px;
   }
   
-  .footer_andress > h1 {
+  .footer_andress > h2 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
@@ -92,7 +92,7 @@
     text-align: start;
   }
   
-  .footer_contact > h1 {
+  .footer_contact > h2 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
@@ -131,7 +131,7 @@
     margin-bottom: 50px;
   }
 
-  .footer_andress > h1 {
+  .footer_andress > h2 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
@@ -141,7 +141,7 @@
     line-height: 15px;
   }
 
-  .footer_contact > h1 {
+  .footer_contact > h2 {
     color: #fff;
     text-align: center;
     font-family: Poppins;
