@@ -4,6 +4,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 3rem;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
 }
 
 .footer_informations{
@@ -16,13 +22,14 @@
   padding: 0px 40px;
 }
 
-.logo
-{
- display: flex;
- justify-content: center;
- align-items: center;
- width: 346px; 
- height: 206px;
+.logo--parnamirim {
+  width: 266px; 
+  height: 126px;
+}
+
+.logo {
+ width: 286px; 
+ height: 146px;
 }
 
 .footer_andress > h2 {
@@ -57,17 +64,14 @@
     align-items: center;
   }
   
-  /* .footer_andress, .footer_contact{
-    align-content: center;
-  } */
+  .logo--parnamirim {
+    width: 246px; 
+    height: 106px;
+  }
   
-  .logo
-  {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 346px; 
-   height: 206px;
+  .logo {
+   width: 266px; 
+   height: 126px;
   }
 
   .footer_informations{
@@ -109,24 +113,26 @@
   .footer{
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
+
+  .logo--parnamirim {
+    width: 216px; 
+    height: 136px;
+  }
+
   .logo{
     height: 100%;
   }
   
   .footer_logo
    {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 212px;
-    height: 126px;
+    flex-direction: column;
   }
   
   .footer_informations{
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 16px;
     height: 100%;
     margin-bottom: 50px;
   }
@@ -149,5 +155,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 15px; 
+    margin-bottom: 16px;
   }
 }
